@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="card">
+      <div class="logo"><strong>My Portfolio</strong></div>
+      <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#education">Học vấn</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="card bg-odd">
+        <img src="/download.png" alt="Ảnh đại diện" class="avatar" />
+        <h1>Nguyễn Văn A</h1>
+        <p>
+          Xin chào! Tôi là một <strong>Lập trình viên Web</strong> đam mê sáng
+          tạo. Tôi thích biến những ý tưởng phức tạp thành các ứng dụng
+          <em>đơn giản, dễ sử dụng</em> và đẹp mắt. Mục tiêu của tôi là không
+          ngừng học hỏi để tạo ra những sản phẩm mang lại giá trị thực tế cao
+          nhất cho người dùng.
+        </p>
+
+        <div class="links">
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="mailto:email@example.com" target="_blank">Email</a>
+        </div>
+      </section>
+
+      <section id="skills" class="card bg-even">
+        <h2>Kỹ năng nổi bật</h2>
+        <ul class="skills-list">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>
+            Frontend Frameworks
+            <ul class="sub-skills">
+              <li>ReactJS</li>
+              <li>NestJS</li>
+            </ul>
+          </li>
+          <li>UI/UX Design (Figma)</li>
+          <li>Git & GitHub Workflow</li>
+        </ul>
+      </section>
+
+      <section id="education" class="card bg-odd">
+        <h2>Học vấn</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Giai đoạn</th>
+              <th>Trường</th>
+              <th>Năm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Đại học</td>
+              <td>Đại học Việt Nhật</td>
+              <td>2023 - 2027</td>
+            </tr>
+            <tr>
+              <td>Trung học Phổ thông</td>
+              <td>Gia Bình số 1</td>
+              <td>2020 - 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="contact" class="card bg-even">
+        <h2>Liên hệ với tôi</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Nhập tên của bạn"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="example@email.com"
+            />
+          </div>
+
+          <div class="form-radio">
+            <label
+              ><input type="radio" name="status" value="student" checked /> Tôi
+              là Student</label
+            >
+            <label
+              ><input type="radio" name="status" value="professional" /> Working
+              professional</label
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Lời nhắn:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Nhập nội dung..."
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+            <button type="reset" class="btn-reset">Làm mới</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
